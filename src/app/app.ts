@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { UsersWrapper } from './users-wrapper/users-wrapper';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [UsersWrapper],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   protected title = 'users-cards';

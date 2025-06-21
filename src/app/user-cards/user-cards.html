@@ -1,0 +1,18 @@
+<section>
+  <div class="cards">
+    @for (user of users; track user.email) {
+    <div class="card">
+      <div>
+        <img src={{user.profilePicture}} alt="profile image" />
+      </div>
+      <h3 [ngClass]="user.role">{{user.role}}</h3>
+      <ul>
+        <li>{{user.username}}</li>
+        <li>{{user.email}}</li>
+        <li>{{user.phone}}</li>
+        <li>{{user.birthdate}}</li>
+      </ul>
+    </div>
+    }
+  </div>
+</section>
